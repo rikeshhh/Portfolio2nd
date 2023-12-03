@@ -1,6 +1,28 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.typing-demo {
+  width: 16ch;
+  animation: typing 4s steps(15), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid red;
+  color: red;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    color: black;
+  }
+}
+    
+@keyframes blink {
+  20% {
+    border-color: transparent
+  }
+}
+.main-background{
+  background-image: url(./assets/penguin-42936_640.png);
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+
 }

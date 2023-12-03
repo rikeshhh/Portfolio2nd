@@ -1,34 +1,32 @@
-import { useState } from "react";
-import { CiLinkedin, CiFacebook, CiMenuBurger } from "react-icons/ci";
+import { Link } from "react-router-dom";
+import { FaHome,FaRegAddressCard } from "react-icons/fa";
+
 const NavBar = () => {
-  const [openNav,setOpenNav]=useState(false)
-
   return (
-    <nav className="flex justify-between font-Poppins font-normal text-lg max-sm:justify-center shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] border-b-4 border-indigo-500 p-3">
-      <div className="flex justify-between items-center gap-16 max-sm:hidden">
-        <div>Rikesh Shrestha</div>
-        <div>
-          <ul className="flex justify-center items-center gap-4">
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>Testinomial</li>
-            <li>About</li>
-          </ul>
-        </div>
+    <nav className=" bg-[#2E2E47] flex flex-col justify-center text-white items-center h-screen font-Poppins text-lg">
+      <div className="flex">
+        <ul>
+          <li className="flex justify-center items-center gap-4">
+              <FaHome />
+            <Link to="">
+              Home
+            </Link>
+          </li>
+          <li className="flex justify-center items-center gap-4">
+          <FaRegAddressCard />
+            <Link to="About">About</Link>
+          </li>
+          <li className="flex justify-center items-center gap-4">
+          <Link to=""></Link>
+          </li>
+          <li className="flex justify-center items-center gap-4">
+            <Link to=""></Link>
+          </li>
+          <li className="flex justify-center items-center gap-4">
+            <Link to=""></Link>
+          </li>
+        </ul>
       </div>
-      <div className="flex justify-end gap-4 text-lg ">
-        <button>
-          <CiLinkedin />
-        </button>
-        <button>
-          <CiFacebook />
-        </button>
-        <button onClick={()=>setOpenNav(true)}>
-          <CiMenuBurger />
-        </button>
-      </div>
-      {openNav && <section className=""></section>}
-
     </nav>
   );
 };

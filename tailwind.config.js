@@ -23,7 +23,16 @@ export default {
       'extra-bold': '800',
       black: '900',
     },
-    extend: {},
+    extend: {
+      color:{
+        'dark-blue':'#2E2E47',
+        'light-blue':'#3C3C5B',
+        },
+        padding:{
+          '96px':'96px',
+          '132px':'132px',
+        }
+    },
   },
   plugins: [],
 }
