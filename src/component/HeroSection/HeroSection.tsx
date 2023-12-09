@@ -1,7 +1,6 @@
 import HeroAside from "./HeroImage";
 
 const HeroSection = () => {
-  const downloadPort='portfolio.docx'
 
   return (
     <section className="HeroSection">
