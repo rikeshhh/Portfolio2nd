@@ -2,22 +2,37 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import Layout from './Layout.tsx'
-import About from './component/About.tsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import HeroSection from './component/HeroSection.tsx'
+import HeroSection from './component/HeroSection/HeroSection.tsx'
+import Comnbin from './component/SkillProject/Skill/Comnbin.tsx'
+import App from './App.tsx'
+import Project from './component/SkillProject/Project/Project.tsx'
+import Experience from './component/Experience.tsx'
 const router=createBrowserRouter([
   {
     path: "",
     element: <Layout />,
     children: [
+    {
+      path:'',
+      element:<App/>
+    },
       {
-        path: "/",
+        path: "Hero",
         element: <HeroSection />,
       },
       {
-        path: "About",
-        element: <About />,
+        path:"Combine",
+        element:<Comnbin/>
       },
+      {
+        path:"Project",
+        element:<Project/>
+      },
+      {
+        path:'Experience',
+        element:<Experience/>
+      }
     ],
   },
 ])

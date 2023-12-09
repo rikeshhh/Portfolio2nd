@@ -1,3 +1,9 @@
+body{
+  font-family: Poppins;
+  background-color: #090E16;
+  color: white;
+  font-family: poppins;
+}
 .typing-demo {
   width: 16ch;
   animation: typing 4s steps(15), blink .5s step-end infinite alternate;
@@ -6,7 +12,12 @@
   border-right: 3px solid red;
   color: red;
 }
-
+.main-container{
+  max-width: calc(1174px + 30px);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
 @keyframes typing {
   from {
     width: 0;
@@ -19,10 +30,9 @@
     border-color: transparent
   }
 }
-.main-background{
+.hero-background{
   background-image: url(./assets/penguin-42936_640.png);
-  object-fit: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-
+background-size: contain;
+background-repeat: no-repeat;
+background-position: right;
 }

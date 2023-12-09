@@ -1,17 +1,19 @@
 import './App.css'
-import NavBar from './NavBar'
-import HeroSection from './component/HeroSection'
+import Experience from './component/Experience'
+import HeroSection from './component/HeroSection/HeroSection'
+import Project from './component/SkillProject/Project/Project'
+import Comnbin from './component/SkillProject/Skill/Comnbin'
 function App() {
 
   return (
     <>
-    <header>
-      <NavBar/>
-    </header>
-    <main className='flex justify-center items-center flex-col h-screen'>
+  
+    <div className='flex justify-center items-center flex-col main-container gap-40'>
       <HeroSection/>
-    </main>
-    <footer></footer>
+      <Comnbin/>
+      <Project/>
+      <Experience/>
+    </div>
     </>
   )
 }
