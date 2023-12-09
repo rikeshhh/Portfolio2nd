@@ -31,16 +31,16 @@ useEffect(() => {
     <section>
       <div className="main-container">
       <div className="flex flex-col" >
-<div className="grid grid-cols-4 text-white  gap-8  relative">
+<div className="grid grid-cols-3 text-white  gap-8  relative max-sm:grid-cols-1 justify-center items-center">
 {userData.slice(0,8).map((item:Repo)=>(
-  <div key={item.id} className="w-44 border rounded-lg flex justify-center items-center flex-col p-4">
+  <div key={item.id} className="w-44 border rounded-lg flex justify-center items-center flex-col p-4 gap-4">
     <figure>
       <img src={item.owner.avatar_url} alt="" className="max-w-full max-h-full"/>
     </figure>
     <h1>{item.name}</h1>
     <div>
 
-    <button onClick={()=>handlick(item.html_url)}>View</button>
+    <button onClick={()=>handlick(item.html_url)} className="border p-2 rounded-md">View</button>
     </div>
   </div>
 ))}
