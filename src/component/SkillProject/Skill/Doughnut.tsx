@@ -4,10 +4,12 @@ import Datas from "../../../Datas.jsx"
 ChartJs.register(ArcElement, Tooltip, Legend);
 const Doughnuts = () => {
   const dataTwo = {
-    labels: [],
+    labels: [
+    ],
     datasets: [
       {
-        data: Datas.map((item) => item.percent),
+     
+        data: Datas.map((item) => item.percent ),
 
         backgroundColor: [
           "#B22222",
@@ -21,9 +23,10 @@ const Doughnuts = () => {
         ],
       },
     ],
+    
   };
   const options = {
-    cutout: 140,
+    cutout: 120,
   }
   const textCenter = {
     id:'textCenter',
