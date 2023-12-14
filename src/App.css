@@ -3,6 +3,7 @@ body{
   background-color: #090E16;
   color: white;
   font-family: poppins;
+ 
 }
 .typing-demo {
   width: 16ch;
@@ -13,7 +14,7 @@ body{
   color: red;
 }
 .main-container{
-  max-width: calc(679px + 30px);
+  max-width: calc(879px + 30px);
   width: 100%;
   margin: 0 auto;
   padding: 0px 15px;
@@ -35,4 +36,52 @@ body{
 background-size: contain;
 background-repeat: no-repeat;
 background-position: right;
+}
+.skill__background_image{
+  background-image: url("./assets/.jpg");
+  width: 100%;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.polygon{
+  clip-path: circle(50px at 0 100px);
+}
+.hero__background__image{
+  background-image: url("./assets/bg.jpg");
+  background-attachment: fixed;
+  width: 100%;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ball div{
+  animation: bouncingBall 2s alternate-reverse infinite ;
+}
+.ballTwo div{
+  animation: bouncingBall 2s alternate-reverse infinite ;
+}
+@keyframes bouncingBall {
+  10%{
+    margin-top: 50px;
+  }
+  
+ 
+}
+.box-shadow{
+  background-color: aliceblue;
+  color: navy;
+  text-align: center;
+box-shadow: 1px -0px 2px rgba(21, 0, 0, 0.32),
+  2px -1px 9px rgba(21, 0, 0, 0.29),
+  5px -2px 20px rgba(21, 0, 0, 0.26),
+  8px -4px 35px rgba(21, 0, 0, 0.22),
+  13px -7px 55px rgba(21, 0, 0, 0.19),
+  19px -10px 79px rgba(21, 0, 0, 0.16),
+  25px -13px 108px rgba(21, 0, 0, 0.13),
+  33px -17px 141px rgba(21, 0, 0, 0.10),
+  42px -22px 178px rgba(21, 0, 0, 0.06),
+  52px -27px 220px rgba(21, 0, 0, 0.03);
+
 }

@@ -33,7 +33,7 @@ useEffect(() => {
       <div className="flex flex-col" >
 <div className="grid grid-cols-3 text-white  gap-8  relative max-sm:grid-cols-1 justify-center items-center">
 {userData.slice(0,8).map((item:Repo)=>(
-  <div key={item.id} className="w-44 border rounded-lg flex justify-center items-center flex-col p-4 gap-4">
+  <div key={item.id} className="w-60 h-auto border rounded-lg flex justify-center items-center flex-col p-4 gap-4">
     <figure>
       <img src={item.owner.avatar_url} alt="" className="max-w-full max-h-full"/>
     </figure>

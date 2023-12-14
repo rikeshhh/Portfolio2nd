@@ -2,7 +2,7 @@ import ProjectData from './ProjectData'
 
 const Project = () => {
   return (
-    <section className='main-container'>
+    <section className='hero__background__image'>
     <div className="main-container">
     <div className='flex flex-col justify-center items-center '>
         <div className='font-semibold p-8 text-blue-700 text-center text-4xl'>  My Project</div>

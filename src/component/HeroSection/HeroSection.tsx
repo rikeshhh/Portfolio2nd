@@ -1,6 +1,6 @@
 import HeroAside from "./HeroImage";
 import { motion } from "framer-motion";
-
+import wave from "./wave(1).svg"
 const HeroSection = () => {
   const words = "Rikesh Shrestha";
   const letters = words.split("");
@@ -15,9 +15,9 @@ const HeroSection = () => {
     }),
   };
   return (
-    <section className="HeroSection py-16">
-      <div className="main-container">
-        <div className="flex  flex-col gap-8">
+    <section className="HeroSection py-16 hero__background__image">
+      <div className="main-container ">
+        <div className="flex  flex-col gap-8 relative">
           <HeroAside />
           <div className="flex justify-center items-center font-black flex-col text-4xl gap-10 text-center">
           <div className="flex">
@@ -53,6 +53,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+    
     </section>
   );
 };
