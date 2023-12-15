@@ -1,6 +1,5 @@
 import HeroAside from "./HeroImage";
 import { motion } from "framer-motion";
-import wave from "./wave(1).svg"
 const HeroSection = () => {
   const words = "Rikesh Shrestha";
   const letters = words.split("");
