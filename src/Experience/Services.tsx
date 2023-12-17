@@ -24,7 +24,7 @@ const Services: React.FC = () => {
     <section>
       <div className="main-container">
         <div className="flex flex-col justify-center items-center ">
-          <h2 className="text-4xl font-black p-4 text-blue-700">My Services</h2>
+          <h2 className="text-4xl font-black p-4 ">My Services</h2>
           <div className="grid grid-cols-4 gap-4 max-sm:grid-cols-1">
             {services.map((item) => (
               <div

@@ -12,7 +12,7 @@ const SkillName = () => {
         {Data.map((item)=>(
             <div className={`flex flex-col relative justify-center items-center py-2 px-4 z-50 h-[69px] max-sm:w-52 ${item.color} border rounded-xl skill-shadow`} key={item.id}>
 
-<motion.h1
+<motion.h3
       initial="hidden"
       animate="visible"
       transition={{ duration: 1 }}
@@ -20,7 +20,7 @@ const SkillName = () => {
       className="tracking-[-0.02em] drop-shadow-sm   "
     >
 {item.name} 
-   </motion.h1>
+   </motion.h3>
    <motion.p
       initial="hidden"
       animate="visible"

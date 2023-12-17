@@ -8,7 +8,7 @@ const Layout = () => {
       <header className="absolute z-40 w-full border-b-2 border-[#ffffff1a] py-6">
         <NavBar/>
       </header>
-      <main className="hero__background__image">
+      <main className="hero__background__image text-white">
         <Outlet />
       </main>
       <footer>
