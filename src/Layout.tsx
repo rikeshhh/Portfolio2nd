@@ -5,10 +5,10 @@ import Footer from "./component/Footer/Footer";
 const Layout = () => {
   return (
     <>
-      <header>
+      <header className="absolute z-40 w-full border-b-2 border-[#ffffff1a] py-6">
         <NavBar/>
       </header>
-      <main>
+      <main className="hero__background__image">
         <Outlet />
       </main>
       <footer>

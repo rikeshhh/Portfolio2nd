@@ -12,7 +12,7 @@ const Services: React.FC = () => {
     },
     {
       id: 3,
-      header: "Mobile App Interface Development",
+      header: "Mobile Development",
     },
     {
       id: 4,
@@ -23,13 +23,13 @@ const Services: React.FC = () => {
   return (
     <section>
       <div className="main-container">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center ">
           <h2 className="text-4xl font-black p-4 text-blue-700">My Services</h2>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-4 gap-4 max-sm:grid-cols-1">
             {services.map((item) => (
               <div
                 key={item.id}
-                className="h-48  box-shadow flex justify-center items-center rounded-md"
+                className="h-48  box-shadow flex justify-center items-center rounded-md p-4"
               >
                 <div className="flex">{item.header}</div>
               </div>

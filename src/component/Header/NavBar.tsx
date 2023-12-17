@@ -3,7 +3,7 @@ import { Dropdown } from "flowbite-react";
 
 const NavBar = () => {
   return (
-    <section className="font-semibold text-lg  border-black  p-4 border-b-2">
+    <section className="font-semibold text-lg  border-black  p-4 ">
       <div className="main-container ">
         <div className="flex justify-between">
           <Link to="/">Rikesh</Link>

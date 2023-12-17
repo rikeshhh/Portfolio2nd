@@ -31,17 +31,23 @@ useEffect(() => {
     <section>
       <div className="main-container">
       <div className="flex flex-col" >
-<div className="grid grid-cols-3 text-white  gap-8  relative max-sm:grid-cols-1 justify-center items-center">
-{userData.slice(0,8).map((item:Repo)=>(
-  <div key={item.id} className="w-60 h-auto border rounded-lg flex justify-center items-center flex-col p-4 gap-4">
+<div className="grid text-white  gap-12  relative grid-cols-1 justify-center items-center">
+{userData.slice(0,3).map((item:Repo)=>(
+  <div key={item.id} className="flex h-auto border rounded-lg justify-center items-center  p-4 gap-4 max-sm:flex-col box-shadow">
+ 
+    <div className="flex flex-col justify-center items-center p-2">
     <figure>
-      <img src={item.owner.avatar_url} alt="" className="max-w-full max-h-full"/>
+      <img src={item.owner.avatar_url} alt="" className="max-w-full max-h-full max-sm:w-auot"/>
     </figure>
-    <h1>{item.name}</h1>
-    <div>
+    <h5>{item.name}</h5>
+  </div>
+  <div className="flex flex-col justify-center items-center gap-2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia consequatur provident nam officia dicta, iusto eos modi impedit nihil debitis! Iste tempora ipsam provident voluptatem quo, reiciendis delectus porro.
+   <div>
+   <button onClick={()=>handlick(item.html_url)} className="border p-2 rounded-md">View</button>
+   </div>
 
-    <button onClick={()=>handlick(item.html_url)} className="border p-2 rounded-md">View</button>
-    </div>
+  </div>
   </div>
 ))}
 </div>
