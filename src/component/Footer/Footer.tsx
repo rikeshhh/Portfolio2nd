@@ -55,7 +55,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className=" h-auto text-white w-auto z-50 flex flex-col justify-center items-center  gap-4 border max-sm:p-0 footer-form rounded-md max-sm:w-auto">
+          <div className=" h-auto w-96 text-white  z-50 flex flex-col justify-center items-center  gap-4 border max-sm:p-0 footer-form rounded-md max-sm:w-auto">
             <h6>Message</h6>
         <input type="text" />
             <input type="text" />
