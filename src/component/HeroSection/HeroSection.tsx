@@ -16,7 +16,7 @@ const HeroSection = () => {
   return (
     <section className="HeroSection  hero__background__image">
       <div className="main-container ">
-        <div className="text-center py-32 flex items-center flex-col justify-center gap-8 max-sm:py-22">
+        <div className="text-center py-32 flex items-center flex-col justify-center gap-2 max-sm:py-22">
           <div className="p-4 rounded-md">
             <div className="flex  flex-col gap-8 relative">
               <HeroAside />

@@ -9,13 +9,13 @@ function App() {
   return (
     <>
   
-    <div className='flex justify-center items-center flex-col  gap-40 '>
+    <main>
       <HeroSection/>
       <Services/>
       <Comnbin/>
       <Project/>
       <Experience/>
-    </div>
+    </main>
     </>
   )
 }

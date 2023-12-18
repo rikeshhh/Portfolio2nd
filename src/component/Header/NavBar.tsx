@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <section className="font-semibold text-lg  border-black  p-4 text-white">
       <div className="main-container ">
-        <div className="flex justify-between">
+         <div className="flex justify-between ">
           <Link to="/" className="headerS">Rikesh</Link>
           <nav className="max-sm:hidden">
             <ul className="flex gap-10">
@@ -13,7 +13,7 @@ const NavBar = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="Combine">Skills</Link>
+                <Link to="">Services</Link>
               </li>
               <li>
                 <Link to="Project">Project</Link>
@@ -40,7 +40,7 @@ const NavBar = () => {
             </Dropdown>
           </nav>
         </div>
-      </div>
+       </div>
     </section>
   );
 };

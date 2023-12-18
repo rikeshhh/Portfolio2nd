@@ -43,7 +43,7 @@ const Doughnuts = () => {
     }
   }
   return (
-  <div className="w-96 z-50">
+  <div className="w-96 z-50 max-sm:w-80">
       <Doughnut
       data={dataTwo}
       options={options}

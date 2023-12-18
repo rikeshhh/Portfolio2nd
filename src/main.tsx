@@ -8,6 +8,7 @@ import Comnbin from './component/SkillProject/Skill/Comnbin.tsx'
 import App from './App.tsx'
 import Project from './component/SkillProject/Project/Project.tsx'
 import Experience from './component/Experience.tsx'
+import Services from './Experience/Services.tsx'
 const router=createBrowserRouter([
   {
     path: "",
@@ -22,8 +23,8 @@ const router=createBrowserRouter([
         element: <HeroSection />,
       },
       {
-        path:"Combine",
-        element:<Comnbin/>
+        path:"Services",
+        element:<Services/>
       },
       {
         path:"Project",

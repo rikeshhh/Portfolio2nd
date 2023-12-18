@@ -1,6 +1,12 @@
 body{
   font-family: Poppins;
   font-family: poppins;
+  background-image: url("./assets/bg.jpg");
+  background-attachment: fixed;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
 }
 .typing-demo {
   width: 16ch;
