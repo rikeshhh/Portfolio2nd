@@ -22,9 +22,9 @@ const ProjectData = () => {
       console.log("error fetching data", error);
     }
   };
-  const handlick = (repoUrl: string) => {
-    window.location.href = repoUrl;
-  };
+  // const handlick = (repoUrl: string) => {
+  //   window.location.href = repoUrl;
+  // };
   useEffect(() => {
     fetcUserData();
   }, []);
