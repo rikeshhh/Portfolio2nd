@@ -82,8 +82,8 @@ background-position: right;
       7px 4px 0 #fff;
 }
 .box-shadow{
-  background-color: aliceblue;
-  color: navy;
+  background-color: #05386B;
+  color: white;
   text-align: center;
 box-shadow: 1px -0px 2px rgba(21, 0, 0, 0.32),
   2px -1px 9px rgba(21, 0, 0, 0.29),
@@ -100,7 +100,6 @@ box-shadow: 1px -0px 2px rgba(21, 0, 0, 0.32),
 input{
   background-color: white;
   color:navy;
-  width: 250px;
 }
 .footer-form{
   background-image: url('../src/assets/bg.jpg');
@@ -128,4 +127,23 @@ h1{
   text-shadow: 4px 4px 0px #000, 
   -4px 0 0px #000,
   7px 4px 0 #fff;
+}
+.services__background{
+  background-image: url(../src/assets/mobile.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.neu__background{
+  background-image: url(../src/assets/office-620822_1280.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.servicess{
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(255,255,255,0.3);
 }

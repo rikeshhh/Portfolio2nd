@@ -6,8 +6,9 @@ import {
   FaPhoneAlt,
   FaSearchLocation,
 } from "react-icons/fa";
-
+import ContactForm from "./ContactForm";
 const Footer = () => {
+
   return (
     <section className=" py-12 ">
       <div className="main-container ">
@@ -41,26 +42,20 @@ const Footer = () => {
               </ul>
             </div>
             <div className="flex justify-center items-center gap-4 py-4">
-              <a href="">
-                {" "}
+              <a href="https://github.com/rikeshhh" target="_blank">
                 <FaGithubSquare />{" "}
               </a>
-              <a href="">
-                {" "}
+              <a href="https://github.com/rikeshhh" target="_blank">
                 <FaInstagram />
               </a>
-              <a href="">
-                {" "}
+              <a href="https://github.com/rikeshhh" target="_blank" >
                 <FaFacebook />
               </a>
             </div>
           </div>
-          <div className=" h-auto w-96 text-white  z-50 flex flex-col justify-center items-center  gap-4 border max-sm:p-0 footer-form rounded-md max-sm:w-auto">
-            <h6>Message</h6>
-        <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <button className="bg-red-300 p-2 rounded-md">Submit</button>
+          <div className=" h-auto w-full text-white  z-50 flex flex-col justify-center items-center  gap-4 border max-sm:p-0 footer-form rounded-md ">
+            <h6>Contact Form</h6>
+      <ContactForm/>
           </div>
         </div>
       </div>
