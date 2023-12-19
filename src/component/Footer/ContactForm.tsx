@@ -6,7 +6,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="flex justify-center items-center px-6 w-full">
+    <div className="flex justify-center items-center px-2 w-full">
       <form
         action=""
         onSubmit={handleSubmit}

@@ -57,12 +57,13 @@ const ProjectData = () => {
                     voluptatem quo, reiciendis delectus porro.
                   </div>
                   <div>
-                    <button
-                      onClick={() => handlick(item.html_url)}
+                    <a
+                     href={item.html_url}
+                     target="_blank"
                       className="border p-2 rounded-md"
                     >
                       View
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

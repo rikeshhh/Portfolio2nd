@@ -13,7 +13,7 @@ const Footer = () => {
     <section className=" py-12 ">
       <div className="main-container ">
         <h5>Get in touch</h5>
-        <div className="flex max-sm:flex-col">
+        <div className="flex max-sm:flex-col gap-4">
           <div className="grid grid-cols-2 w-full gap-2 max-sm:grid-cols-1">
             <div className="text-left py-5">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
